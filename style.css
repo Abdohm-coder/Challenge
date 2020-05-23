@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    background: url(hero.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position-y: 115%;
+    min-height: 60vw;
+    max-width: 96vw;
+    margin: 0 auto;
+}
+.nav-bar
+{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar
+{
+    background-color: #2e2e2f9d;
+}
+.navbar-brand img
+{
+    height: 30px;
+}
+.nav-bar .fa-bars
+{
+    font-size: 35px;
+    color: white;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.nav-link
+{
+    color: #fff !important;
+}
+.nav-link:hover 
+{
+    color: black !important;
+}
+
+/*------------ #main ---------------------*/
+
+#main
+{
+    max-width: 40em;
+    padding: 11%;
+}
+.text
+{
+   margin-bottom: 20px;
+}
+.text p
+{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.text h1 
+{
+    font-weight: bold;
+}
+.text #im
+{
+    font-weight: normal;
+    font-size: 22px;
+}
+.button
+{
+    font-size: 26px;
+}
+.button button
+{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: rgb(19, 16, 16);
+    transition: .3s;
+}
+.button button:hover
+{
+    background: transparent;
+    color: darkgreen;
+    border: 2px solid rgb(155, 150, 150);
+    cursor: pointer;
+}
+header .scrolldown a {
+
+    margin-left: 50% !important;
+    color: #fff;
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    color: #fff;
+    border-radius: 100%;
+  
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+
+  header .scrolldown a:hover {
+    color: #ff8500;
+  }
+
+  /*------------------ Main ------------------------ */
+
+  main
+  {
+      margin: 50px 0;
+      margin-bottom: 0;
+      padding: 0 20px;
+      min-height: 50vw;
+  }
+  section
+  {
+      margin: 100px 0 ;
+  }
+  section#works
+  {
+      display: block;
+  }
+  .kitaba
+  {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      text-align: center;
+  }
+  .kitaba h1 
+  {
+      font-size: 36px;
+  }
+  .images
+  {
+      display: block;
+
+  }
+  .images .img
+  {
+      display: flex;
+  }
+  .images .img1
+  {
+      display: flex;
+  }
+  .images img
+  {
+      max-width: 33%;
+  }
+
+  /*---------------------- Section #about -------------*/
+
+  section#about
+  {
+      background: #222222;
+      padding: 11%;
+  }
+  .chkopi
+  {
+      display: flex;
+  }
+  .chkopi p 
+  {
+      padding: 0 30px;
+  }
+  .kitaba1,.chkopi
+  {
+      padding: 30px;
+      max-width: 100em;
+      color: white;
+  }
+  .kitaba1 h1
+  {
+      font-weight: bold;
+      font-size: 36px;
+      padding: 0 30px;
+  }
+  .kitaba1 p 
+  {
+      font-size: 14px;
+      padding: 0 30px;
+  }
+
+  /*----------------- Section Skills ------------------ */
+
+  section#skills
+  {
+      display: block;
+  }
+  .kitaba2
+  {
+      padding: 2% 11%;
+  }
+  .kitaba2 h1 
+  {
+      font-size: 36px;
+      margin-bottom: 35px;
+  }
+  .kitaba2 p 
+  {
+      font-size: 16px;
+  }
+  .khanats 
+  {
+      display: flex;
+      width: 100%;
+  }
+  .khana 
+  {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+  
+  /*--------------------- Section like ---------------------- */
+
+  section#like
+  {
+      padding: 11%;
+      margin-bottom: 0;
+      background: #1a1a1a;
+  }
+  .kitaba3
+  {
+      padding: 30px;
+      max-width: 50em;
+      color: white;
+  }
+  .kitaba3 h1 
+  {
+      font-size: 36px;
+  }
+  .kitaba3 p 
+  {
+      font-size: 14px;
+  }
+  .activity
+  {
+    display: flex;
+    color: white;
+  }
+  .exemple
+  {
+      width: 100%; 
+      padding: 30px;
+      font-size: 92px;
+      text-align: center;
+  }
+  
+ .exemple h3 
+ {
+     font-size: 15px;
+     padding: 15px;
+ }
+
+ /*--------------- Section last --------------------- */
+
+ section#last
+ {
+     background: #222222;
+     margin: 0 auto;
+     padding: 11%;
+     padding-bottom: 30px;
+     text-align: center;
+     color: white;
+ }
+ .kitaba4
+ {
+     padding: 12px;
+ }
+ .kitaba4 h1 
+ {
+     padding: 40px;
+ }
+ .kitaba4 button
+ {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+    margin-bottom: 5em;
+ }
+ .kitaba4 button:hover
+ {
+    background: transparent;
+    color: darkgreen;
+    border: 2px solid rgb(155, 150, 150);
+    cursor: pointer;
+ }
+ .fa-facebook-f,.fa-twitter,.fa-linkedin-in,.fa-envelope
+ {
+     font-size: 36px;
+     margin: 0 7px;
+     color: white;
+ }
+ .line 
+ {
+     height: 2px;
+     width: 25%;
+     background: white;
+     margin: 40px auto;
+ }
+ .footer
+ {
+     padding: 10px 20px;
+ }
+ .fa-copyright
+ {
+     color: white;
+ }

@@ -1,0 +1,54 @@
+/*------------------- @Media ----------------------- */
+
+@media(max-width:1100px) 
+{
+    /*------------------ Section Skills ------------------*/
+
+    .khanats
+    {
+        display: block;
+    }
+    .kitaba2
+    {
+        text-align: center;
+    }
+    .kitaba2 h1 
+    {
+        font-weight: bold;
+    }
+
+}
+    /*------------------ Section Like ------------------*/
+
+@media(max-width:860px)
+{
+    .activity
+    {
+        display: block;
+    }
+    .kitaba3
+    {
+        text-align: center;
+    }
+}
+
+    /*------------------ Section About ------------------*/
+
+@media(max-width:565px)
+{
+    section#about
+    {
+        padding: 11% 0;
+    }
+    .kitaba1
+    {
+        text-align: center;
+    }
+}
+@media(max-width:425px)
+{
+    .chkopi
+  {
+      display: block;
+  }
+}
