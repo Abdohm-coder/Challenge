@@ -149,21 +149,98 @@
 .progress-circle.p73 .value-bar { transform: rotate(263deg); }
 .progress-circle.p74 .value-bar { transform: rotate(266deg); }
 .progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
+.progress-circle.p76 .value-bar {
+    animation: hello4 .5s ease-out forwards;
+   }@keyframes hello4{
+      0%{
+         transform: rotate(0deg);
+         opacity: 0;
+      }25%{
+         transform: rotate(calc(274*25/100)deg);
+         opacity: .25;
+      }50%{
+         transform: rotate(calc(274*50/100)deg);
+         opacity: .5;
+      }75%{
+         transform: rotate(calc(274*75/100)deg);
+         opacity: .75;
+      }100%{
+         transform: rotate(274deg);
+         position: 1;
+      }
+   }
 .progress-circle.p77 .value-bar { transform: rotate(277deg); }
 .progress-circle.p78 .value-bar { transform: rotate(281deg); }
 .progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
+.progress-circle.p80 .value-bar { 
+   animation: hello3 .5s ease-out forwards;
+}@keyframes hello3{
+   0%{
+      transform: rotate(0deg);
+      opacity: 0;
+   }25%{
+      transform: rotate(calc(288*25/100)deg);
+      opacity: .25;
+   }50%{
+      transform: rotate(calc(288*50/100)deg);
+      opacity: .5;
+   }75%{
+      transform: rotate(calc(288*75/100)deg);
+      opacity: .75;
+   }100%{
+      transform: rotate(288deg);
+      position: 1;
+   }
+}
 .progress-circle.p81 .value-bar { transform: rotate(292deg); }
 .progress-circle.p82 .value-bar { transform: rotate(295deg); }
 .progress-circle.p83 .value-bar { transform: rotate(299deg); }
 .progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
+.progress-circle.p85 .value-bar {
+   animation: hello2 .5s ease-out forwards;
+}@keyframes hello2{
+   0%{
+      transform: rotate(0deg);
+      opacity: 0;
+   }25%{
+      transform: rotate(calc(306*25/100)deg);
+      opacity: .25;
+   }50%{
+      transform: rotate(calc(306*50/100)deg);
+      opacity: .5;
+   }75%{
+      transform: rotate(calc(306*75/100)deg);
+      opacity: .75;
+   }100%{
+      transform: rotate(306deg);
+      position: 1;
+   }
+   }
 .progress-circle.p86 .value-bar { transform: rotate(310deg); }
 .progress-circle.p87 .value-bar { transform: rotate(313deg); }
 .progress-circle.p88 .value-bar { transform: rotate(317deg); }
 .progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
+.progress-circle.over50.p90 .value-bar {
+   
+   animation: hello .5s ease-out forwards;
+}@keyframes hello{
+   0%{
+      transform: rotate(0deg);
+      opacity: 0;
+   }25%{
+      transform: rotate(calc(324*25/100)deg);
+      opacity: .25;
+   }50%{
+      transform: rotate(calc(324*50/100)deg);
+      opacity: .5;
+   }75%{
+      transform: rotate(calc(324*75/100)deg);
+      opacity: .75;
+   }100%{
+      transform: rotate(324deg);
+      position: 1;
+   }
+}
 .progress-circle.p91 .value-bar { transform: rotate(328deg); }
 .progress-circle.p92 .value-bar { transform: rotate(331deg); }
 .progress-circle.p93 .value-bar { transform: rotate(335deg); }
@@ -174,3 +251,4 @@
 .progress-circle.p98 .value-bar { transform: rotate(353deg); }
 .progress-circle.p99 .value-bar { transform: rotate(356deg); }
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
