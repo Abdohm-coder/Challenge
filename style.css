@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 header
 {
     background: url(hero.jpg);
@@ -17,38 +16,49 @@ header
 .nav-bar
 {
     top: 0;
-    position: sticky;
+    position: fixed;
     z-index: 2;
+    width: 96vw;
+    height: 60px;
+    background: rgba(59, 53, 53, 0.466);
 }
-.navbar
-{
-    background-color: #2e2e2f9d;
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.navbar-brand img
-{
-    height: 30px;
+.navbar-brand img{
+    width: 20%;
 }
-.nav-bar .fa-bars
-{
-    font-size: 35px;
-    color: white;
+.navbar-brand{
+    margin: auto 0;
+    width: 40%;
 }
-.navbar-toggler
-{
-    outline: none !important;
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+    width: 40%;
 }
-.navbar-nav
-{
-    float: right;
-    text-align: right;
+.nav-item{
+    display: grid;
 }
-.nav-link
-{
-    color: #fff !important;
+ a{
+    text-decoration: none;
+    color: wheat;
 }
-.nav-link:hover 
-{
-    color: black !important;
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: wheat;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.active{
+    color: #1a1a1a;
 }
 
 /*------------ #main ---------------------*/
@@ -57,6 +67,8 @@ header
 {
     max-width: 40em;
     padding: 11%;
+    display: grid;
+    transform: translateY(20%);
 }
 .text
 {
@@ -70,6 +82,29 @@ header
 .text h1 
 {
     font-weight: bold;
+    width: 8em;
+}
+.text .animation1{
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 5 forwards normal;
+}
+
+@keyframes typewriter{
+    from{
+        width: 0;
+    }to{
+        width: 8em;
+    }
+}
+@keyframes blinkTextCursor{
+    from{
+        border-right: 2px solid rgba(0, 0, 0, 0.75); 
+    }to{
+        border-right: transparent;
+    }
 }
 .text #im
 {
@@ -98,28 +133,6 @@ header
     border: 2px solid rgb(155, 150, 150);
     cursor: pointer;
 }
-header .scrolldown a {
-
-    margin-left: 50% !important;
-    color: #fff;
-    display: block;
-    height: 42px;
-    width: 42px;
-    font-size: 42px;
-    line-height: 42px;
-    color: #fff;
-    border-radius: 100%;
-  
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-
-  header .scrolldown a:hover {
-    color: #ff8500;
-  }
-
   /*------------------ Main ------------------------ */
 
   main
@@ -149,20 +162,25 @@ header .scrolldown a {
   }
   .images
   {
-      display: block;
-
-  }
-  .images .img
-  {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
-  .images .img1
-  {
-      display: flex;
+  .images .box-img{
+    max-width: 33%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
   }
   .images img
   {
-      max-width: 33%;
+      max-width: 100%;
+      transition: all .75s ease-out;
+  }
+  .images .box-img img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
   }
 
   /*---------------------- Section #about -------------*/
@@ -219,14 +237,16 @@ header .scrolldown a {
   }
   .khanats 
   {
-      display: flex;
-      width: 100%;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4,1fr);
   }
   .khana 
   {
-      display: block;
-      width: 100%;
+      display: flex;
+      flex-direction: column;
       text-align: center;
+      justify-content: center;
   }
   
   /*--------------------- Section like ---------------------- */
@@ -275,11 +295,11 @@ header .scrolldown a {
  section#last
  {
      background: #222222;
-     margin: 0 auto;
      padding: 11%;
-     padding-bottom: 30px;
      text-align: center;
      color: white;
+     margin-bottom: 0;
+     padding-bottom: 11%;
  }
  .kitaba4
  {
